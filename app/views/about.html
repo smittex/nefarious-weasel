@@ -1,0 +1,10 @@
+<p>This is the about view.</p>
+<h3>Awesome Things</h3>
+<ul ng-repeat="item in about.awesomeThings">
+    <li>{{item}}</li>
+</ul>
+
+
+<input type="text" ng-model="data.text"/>
+<!-- all changes from our Firebase database magically appear here! -->
+<h1>You said: {{ data.text }}</h1>
